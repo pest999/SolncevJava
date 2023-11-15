@@ -4,6 +4,7 @@ import com.codeborne.selenide.junit5.TextReportExtension;
 import com.codeborne.selenide.logevents.LogEvent;
 import com.codeborne.selenide.logevents.LogEventListener;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -37,6 +38,7 @@ public class ListenerTest {
         refresh();
     }
 
+    @Story(value = "One")
     @ParameterizedTest
     @ValueSource(strings = {"get up", "brake"})
     void simpleFlow(String todoItem){
