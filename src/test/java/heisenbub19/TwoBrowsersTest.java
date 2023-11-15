@@ -4,7 +4,7 @@ import com.codeborne.selenide.SelenideConfig;
 import com.codeborne.selenide.SelenideDriver;
 import org.junit.jupiter.api.Test;
 
-public class TwoBrowsersTest {
+public class TwoBrowsersTest extends SelenideBaseTest{
     SelenideDriver admin = new SelenideDriver(new SelenideConfig()
             .browser("firefox"));
     SelenideDriver user = new SelenideDriver(new SelenideConfig()

@@ -1,2 +1,5 @@
-package POM;public class Library {
+package POM;
+
+public class Library {
+
 }
